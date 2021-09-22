@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <script src="script2.js"></script>
+        <title>Trivia!</title>
+
+    </head>
+
+    <body>
+
+        <div class="jumbotron">
+
+            <h1>Trivia!</h1>
+
+        </div>
+
+        <div class="container">
+
+            <div class="section">
+
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+
+                <h3>Which slot on the motherboard is for NVME SSDs?</h3>
+
+                <button type="button" id="button1" onclick="checkOption(this, 'incorrect')">PCI Express</button>
+                <button type="button" id="button2" onclick="checkOption(this, 'incorrect')">DIMM</button>
+                <button type="button" id="button3" onclick="checkOption(this, 'incorrect')">Expansion</button>
+                <button type="button" id="button4" onclick="checkOption(this, 'correct')">M.2</button>
+
+                <p id="feedback1"></p>
+
+            </div>
+
+            <script src="script1.js"></script>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+
+                <h3>What is the high-end motherboard chipset for Intel Core CPUs?</h3>
+
+                <form onsubmit="return false;">
+                    <input type="text" id="answer">
+                    <input type="submit" id="submit">
+                </form>
+
+                <p id="feedback2"></p>
+
+                <p id="hint"></p>
+
+            </div>
+
+        </div>
+
+    </body>
+
+</html>
