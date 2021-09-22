@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function() {
             }
             else {
                 answer.style.backgroundColor = "red";
-                document.querySelector("#hint").innerHTML = 'Hint: the most recent chipsets are 500-series meaning the answer will be "x5xx".';
+                document.querySelector("#hint").innerHTML = 'Hint: the most recent chipsets are 500-series meaning the answer will be "_5__".';
                 
                 if (attempts == 1) {
                     document.querySelector("#feedback2").innerHTML = "Incorrect, 1 attempt remaining.";
