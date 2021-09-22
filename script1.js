@@ -14,6 +14,7 @@ function checkOption(button,answer,question) {
             button.style.backgroundColor = "red";
             document.querySelector(`#feedback${question}`).innerHTML = "Incorrect.";
         }
+        
         counters[question - 1] = 1;
     }
 };
