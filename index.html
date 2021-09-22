@@ -28,18 +28,17 @@
 
                 <h3>Which slot on the motherboard is for NVME SSDs?</h3>
 
-                <button type="button" id="button1" onclick="checkOption(this, 'incorrect')">PCI Express</button>
-                <button type="button" id="button2" onclick="checkOption(this, 'incorrect')">DIMM</button>
-                <button type="button" id="button3" onclick="checkOption(this, 'incorrect')">Expansion</button>
-                <button type="button" id="button4" onclick="checkOption(this, 'correct')">M.2</button>
+                <button type="button" id="button1" onclick="checkOption(this, 'incorrect', 1)">PCI Express</button>
+                <button type="button" id="button2" onclick="checkOption(this, 'incorrect', 1)">DIMM</button>
+                <button type="button" id="button3" onclick="checkOption(this, 'incorrect', 1)">Expansion</button>
+                <button type="button" id="button4" onclick="checkOption(this, 'correct', 1)">M.2</button>
 
                 <p id="feedback1"></p>
 
             </div>
 
-            <script src="script1.js"></script>
-
             <div class="section">
+
                 <h2>Part 2: Free Response</h2>
                 <hr>
 
@@ -55,6 +54,23 @@
                 <p id="hint"></p>
 
             </div>
+
+            <div class="section">
+                <h2>Part 3: Multiple Choice</h2>
+                <hr>
+
+                <h3>Which component is the ATX 24-pin power cable connected to?</h3>
+
+                <button type="button" id="button5" onclick="checkOption(this, 'incorrect', 3)">Sata Drives</button>
+                <button type="button" id="button6" onclick="checkOption(this, 'incorrect', 3)">GPU</button>
+                <button type="button" id="button7" onclick="checkOption(this, 'correct', 3)">Motherboard</button>
+                <button type="button" id="button8" onclick="checkOption(this, 'incorrect', 3)">Fan Hub</button>
+
+                <p id="feedback3"></p>
+
+            </div>
+
+            <script src="script1.js"></script>
 
         </div>
 
