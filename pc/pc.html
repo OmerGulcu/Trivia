@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="pcstyles.css" rel="stylesheet">
+        <script src="pctextcheck.js"></script>
+        <title>Trivia!</title>
+        <meta charset="utf-8">
+
+    </head>
+    <body>
+        <div class="jumbotron">
+
+            <h1>Trivia!</h1>
+
+        </div>
+        <div class="container">
+            <div class="section">
+
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+
+                <h3>Which slot on the motherboard is for NVME SSDs?</h3>
+                <button type="button" id="button1" onclick="checkOption(this, 'incorrect', 1)">PCI Express</button>
+                <button type="button" id="button2" onclick="checkOption(this, 'incorrect', 1)">DIMM</button>
+                <button type="button" id="button3" onclick="checkOption(this, 'incorrect', 1)">Expansion</button>
+                <button type="button" id="button4" onclick="checkOption(this, 'correct', 1)">M.2</button>
+                <p id="feedback1"></p>
+
+            </div>
+            <div class="section">
+
+                <h3>What is the high-end motherboard chipset for Intel Core CPUs?</h3>
+                <form onsubmit="return false;">
+                    <input type="text" id="answer">
+                    <input type="submit" id="submit">
+                </form>
+                <p id="feedback2"></p>
+                <p id="hint"></p>
+
+            </div>
+            <div class="section">
+
+                <h2>Part 3: Multiple Choice</h2>
+                <hr>
+
+                <h3>Which component is the ATX 24-pin power cable connected to?</h3>
+                <button type="button" id="button5" onclick="checkOption(this, 'incorrect', 3)">Sata Drives</button>
+                <button type="button" id="button6" onclick="checkOption(this, 'incorrect', 3)">GPU</button>
+                <button type="button" id="button7" onclick="checkOption(this, 'correct', 3)">Motherboard</button>
+                <button type="button" id="button8" onclick="checkOption(this, 'incorrect', 3)">Fan Hub</button>
+                <p id="feedback3"></p>
+
+            </div>
+            <div class="section">
+
+                <h2>Part 4: Multiple Choice</h2>
+                <hr>
+
+                <h3>Which of the features below allows games to run easier while having almost the same graphics?</h3>
+                <button type="button" id="button9" onclick="checkOption(this, 'correct', 4)">DLSS</button>
+                <button type="button" id="button10" onclick="checkOption(this, 'incorrect', 4)">Reflex</button>
+                <button type="button" id="button11" onclick="checkOption(this, 'incorrect', 4)">RTX</button>
+                <button type="button" id="button12" onclick="checkOption(this, 'incorrect', 4)">Anti-aliasing</button>
+                <p id="feedback4"></p>
+            </div>
+            <div class="section">
+
+                <h2>Part 5: Multiple Choice</h2>
+                <hr>
+
+                <h3>Soru</h3>
+                <button type="button" id="button13" onclick="checkOption(this, 'incorrect', 5)">Şık1</button>
+                <button type="button" id="button14" onclick="checkOption(this, 'incorrect', 5)">Şık2</button>
+                <button type="button" id="button15" onclick="checkOption(this, 'correct', 5)">Şık3</button>
+                <button type="button" id="button16" onclick="checkOption(this, 'incorrect', 5)">Şık4</button>
+                <p id="feedback5"></p>
+            </div>
+            <div class="section">
+
+                <h2>Part 6: Multiple Choice</h2>
+                <hr>
+
+                <h3></h3>
+                <button type="button" id="button17" onclick="checkOption(this, 'incorrect', 6)"></button>
+                <button type="button" id="button18" onclick="checkOption(this, 'incorrect', 6)"></button>
+                <button type="button" id="button19" onclick="checkOption(this, 'incorrect', 6)"></button>
+                <button type="button" id="button20" onclick="checkOption(this, 'incorrect', 6)"></button>
+                <p id="feedback6"></p>
+            </div>
+            <div class="section">
+
+                <h2>Part 7: Multiple Choice</h2>
+                <hr>
+
+                <h3></h3>
+                <button type="button" id="button21" onclick="checkOption(this, 'incorrect', 7)"></button>
+                <button type="button" id="button22" onclick="checkOption(this, 'incorrect', 7)"></button>
+                <button type="button" id="button23" onclick="checkOption(this, 'incorrect', 7)"></button>
+                <button type="button" id="button24" onclick="checkOption(this, 'incorrect', 7)"></button>
+                <p id="feedback7"></p>
+            </div>
+            <div class="section">
+
+                <h2>Part 8: Multiple Choice</h2>
+                <hr>
+
+                <h3></h3>
+                <button type="button" id="button25" onclick="checkOption(this, 'incorrect', 8)"></button>
+                <button type="button" id="button26" onclick="checkOption(this, 'incorrect', 8)"></button>
+                <button type="button" id="button27" onclick="checkOption(this, 'incorrect', 8)"></button>
+                <button type="button" id="button28" onclick="checkOption(this, 'incorrect', 8)"></button>
+                <p id="feedback8"></p>
+            </div>
+            <div class="section">
+
+                <h2>Part 9: Multiple Choice</h2>
+                <hr>
+
+                <h3></h3>
+                <button type="button" id="button29" onclick="checkOption(this, 'incorrect', 9)"></button>
+                <button type="button" id="button30" onclick="checkOption(this, 'incorrect', 9)"></button>
+                <button type="button" id="button31" onclick="checkOption(this, 'incorrect', 9)"></button>
+                <button type="button" id="button32" onclick="checkOption(this, 'incorrect', 9)"></button>
+                <p id="feedback9"></p>
+            </div>
+            <div class="section">
+
+                <h2>Part 10: Multiple Choice</h2>
+                <hr>
+
+                <h3></h3>
+                <button type="button" id="button33" onclick="checkOption(this, 'incorrect', 10)"></button>
+                <button type="button" id="button34" onclick="checkOption(this, 'incorrect', 10)"></button>
+                <button type="button" id="button35" onclick="checkOption(this, 'incorrect', 10)"></button>
+                <button type="button" id="button36" onclick="checkOption(this, 'incorrect', 10)"></button>
+                <p id="feedback10"></p>
+            </div>
+
+            <script src="pccheckbutton.js"></script>
+
+        </div>
+        <br>
+        <br>
+        <br>
+    </body>
+</html>
